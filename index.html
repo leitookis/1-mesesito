@@ -21,7 +21,6 @@
 }
 
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -29,9 +28,9 @@ body {
   color: var(--text);
   font-family: "DM Sans", sans-serif;
   background:
-    radial-gradient(ellipse at 15% 12%, rgba(77, 35, 111, .30), transparent 36%),
-    radial-gradient(ellipse at 88% 28%, rgba(23, 48, 94, .28), transparent 38%),
-    radial-gradient(ellipse at 50% 85%, rgba(61, 24, 83, .20), transparent 40%),
+    radial-gradient(ellipse at 15% 12%, rgba(77,35,111,.30), transparent 36%),
+    radial-gradient(ellipse at 88% 28%, rgba(23,48,94,.28), transparent 38%),
+    radial-gradient(ellipse at 50% 85%, rgba(61,24,83,.20), transparent 40%),
     #080610;
   overflow-x: hidden;
 }
@@ -43,7 +42,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
   opacity: .22;
-  background-image: radial-gradient(#d7c2ff 0.7px, transparent .7px);
+  background-image: radial-gradient(#d7c2ff .7px, transparent .7px);
   background-size: 46px 46px;
 }
 
@@ -73,7 +72,7 @@ body::before {
 }
 
 @keyframes drift {
-  to { transform: translate(70px, 45px) scale(1.2); }
+  to { transform: translate(70px,45px) scale(1.2); }
 }
 
 /* PRIMERA PARTE */
@@ -84,7 +83,6 @@ body::before {
   place-items: center;
   padding: 28px;
   text-align: center;
-  position: relative;
 }
 
 .intro-inner {
@@ -100,13 +98,13 @@ body::before {
   margin-bottom: 24px;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 500;
 }
 
 h1 {
-  font-size: clamp(2.8rem, 8vw, 5.8rem);
+  font-size: clamp(2.8rem,8vw,5.8rem);
   line-height: 1.04;
   margin: 0 0 18px;
 }
@@ -124,18 +122,18 @@ h1 em {
 }
 
 .unlock {
-  min-width: min(82vw, 360px);
+  min-width: min(82vw,360px);
   min-height: 88px;
   padding: 20px 38px;
-  border: 1px solid rgba(220, 188, 255, .5);
+  border: 1px solid rgba(220,188,255,.5);
   border-radius: 18px;
   color: white;
-  font: 600 1.2rem "DM Sans", sans-serif;
+  font: 600 1.2rem "DM Sans",sans-serif;
   letter-spacing: .04em;
-  background: linear-gradient(135deg, rgba(88, 43, 126, .92), rgba(26, 39, 79, .95));
-  box-shadow: 0 0 35px rgba(126, 75, 173, .28), inset 0 1px rgba(255,255,255,.12);
+  background: linear-gradient(135deg,rgba(88,43,126,.92),rgba(26,39,79,.95));
+  box-shadow: 0 0 35px rgba(126,75,173,.28),inset 0 1px rgba(255,255,255,.12);
   cursor: pointer;
-  transition: transform .25s, box-shadow .25s, border-color .25s;
+  transition: .25s;
 }
 
 .unlock:hover {
@@ -154,7 +152,7 @@ h1 em {
   letter-spacing: .16em;
 }
 
-/* CONTENIDO DESBLOQUEABLE */
+/* CONTENIDO */
 
 #content { display: none; }
 
@@ -164,12 +162,11 @@ h1 em {
 }
 
 .topline {
-  width: min(900px, calc(100% - 40px));
+  width: min(900px,calc(100% - 40px));
   margin: 0 auto;
   padding: 28px 0 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: #9d8cac;
   font-size: .72rem;
   letter-spacing: .14em;
@@ -179,7 +176,7 @@ h1 em {
 .topline span:last-child { color: #c5a5e9; }
 
 .section {
-  width: min(820px, calc(100% - 40px));
+  width: min(820px,calc(100% - 40px));
   margin: 0 auto;
   padding: 100px 0 34px;
 }
@@ -197,7 +194,7 @@ h1 em {
 }
 
 h2 {
-  font-size: clamp(2.1rem, 6vw, 3.5rem);
+  font-size: clamp(2.1rem,6vw,3.5rem);
   margin: 10px 0 0;
 }
 
@@ -205,10 +202,10 @@ h2 {
   width: 54px;
   height: 1px;
   margin: 22px auto 0;
-  background: linear-gradient(90deg, transparent, #9d6bc5, transparent);
+  background: linear-gradient(90deg,transparent,#9d6bc5,transparent);
 }
 
-/* SEGUNDA PARTE: AUDIOS */
+/* AUDIOS */
 
 .audio-list {
   display: grid;
@@ -222,7 +219,7 @@ h2 {
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: linear-gradient(120deg, rgba(38,22,57,.66), rgba(13,22,43,.72));
+  background: linear-gradient(120deg,rgba(38,22,57,.66),rgba(13,22,43,.72));
   backdrop-filter: blur(12px);
 }
 
@@ -261,10 +258,10 @@ audio {
 /* CARTAS */
 
 .letter {
-  padding: clamp(24px, 5vw, 48px);
+  padding: clamp(24px,5vw,48px);
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: linear-gradient(145deg, rgba(30,19,44,.78), rgba(12,20,39,.76));
+  background: linear-gradient(145deg,rgba(30,19,44,.78),rgba(12,20,39,.76));
   box-shadow: 0 20px 70px rgba(0,0,0,.18);
   color: #e3d9ec;
   font-size: 1rem;
@@ -278,27 +275,27 @@ audio {
   display: block;
   margin-top: 28px;
   color: #c49ce8;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display",serif;
   font-size: 1.55rem;
   font-style: italic;
 }
 
-/* CUARTA PARTE: FOTOS */
+/* FOTOS */
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 16px;
 }
 
 .photo {
   min-height: 230px;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4/5;
   position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: linear-gradient(145deg, #211333, #111c35 70%, #0c0b16);
+  background: linear-gradient(145deg,#211333,#111c35 70%,#0c0b16);
 }
 
 .photo img {
@@ -307,6 +304,7 @@ audio {
   object-fit: cover;
   position: absolute;
   inset: 0;
+  z-index: 1;
   transition: transform .6s;
 }
 
@@ -315,6 +313,7 @@ audio {
 .photo-placeholder {
   position: absolute;
   inset: 0;
+  z-index: 2;
   display: grid;
   place-items: center;
   text-align: center;
@@ -322,7 +321,7 @@ audio {
   color: #a998ba;
   font-size: .82rem;
   line-height: 1.7;
-  background: radial-gradient(circle at 50% 40%, rgba(130,83,164,.18), transparent 55%);
+  background: radial-gradient(circle at 50% 40%,rgba(130,83,164,.18),transparent 55%);
 }
 
 .photo-placeholder b {
@@ -333,17 +332,16 @@ audio {
   margin-bottom: 8px;
 }
 
-.photo.has-image .photo-placeholder { display: none; }
-
 .photo-caption {
   position: absolute;
+  z-index: 3;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 34px 16px 14px;
   color: #fff;
   font-size: .82rem;
-  background: linear-gradient(transparent, rgba(0,0,0,.72));
+  background: linear-gradient(transparent,rgba(0,0,0,.72));
 }
 
 /* FINAL */
@@ -377,7 +375,7 @@ audio {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width:560px) {
+@media(max-width:560px) {
   .section { padding-top: 78px; }
   .photo-grid { gap: 10px; }
   .photo { min-height: 170px; }
@@ -387,8 +385,8 @@ audio {
   .topline { font-size: .62rem; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
     scroll-behavior: auto !important;
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
@@ -407,6 +405,7 @@ audio {
 
 <header class="intro" id="inicio">
   <div class="intro-inner">
+
     <div class="eyebrow">
       22 · 11 · 2026 / nuestro primer mes
     </div>
@@ -425,6 +424,7 @@ audio {
     </button>
 
     <div class="whisper">te amo</div>
+
   </div>
 </header>
 
@@ -435,7 +435,7 @@ audio {
   <span>1 mes ♡</span>
 </div>
 
-<!-- SEGUNDA PARTE: AUDIOS -->
+<!-- SEGUNDA PARTE: 4 AUDIOS -->
 
 <section class="section" id="audios">
 
@@ -453,7 +453,8 @@ audio {
         <strong>Un audio para vos</strong>
         <small>Reproducilo cuando quieras.</small>
         <audio controls preload="none">
-          <source src="audios/audio1.mp3" type="audio/mpeg">
+          <source src="audios/audio1.ogg" type="audio/ogg">
+          Tu navegador no puede reproducir este audio.
         </audio>
       </div>
     </article>
@@ -464,7 +465,8 @@ audio {
         <strong>Otra cosita que quería decirte</strong>
         <small>Un pedacito de mí para vos.</small>
         <audio controls preload="none">
-          <source src="audios/audio2.mp3" type="audio/mpeg">
+          <source src="audios/audio2.ogg" type="audio/ogg">
+          Tu navegador no puede reproducir este audio.
         </audio>
       </div>
     </article>
@@ -475,7 +477,20 @@ audio {
         <strong>Y uno más</strong>
         <small>Porque nunca alcanza.</small>
         <audio controls preload="none">
-          <source src="audios/audio3.mp3" type="audio/mpeg">
+          <source src="audios/audio3.ogg" type="audio/ogg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+      </div>
+    </article>
+
+    <article class="audio-card">
+      <div class="audio-icon">♫</div>
+      <div class="audio-info">
+        <strong>Un último audio para vos</strong>
+        <small>Guardá este también.</small>
+        <audio controls preload="none">
+          <source src="audios/audio4.ogg" type="audio/ogg">
+          Tu navegador no puede reproducir este audio.
         </audio>
       </div>
     </article>
@@ -494,6 +509,7 @@ audio {
   </div>
 
   <div class="letter">
+
     <p>Creo que ya es bastante obvio lo mucho que te amo, pero bueno. Te lo juro con mi vida, que yo el amor lo veía como una pérdida de tiempo, nunca me imaginé estar haciendo esto, estar escribiendo cartas, escribir cosas de amor, hacer cosas que antes no me gustaban, odio las cartas, odio escribir cosas lindas, odiaba hablar con gente, pero ahora te veo y quiero estar con vos todo el día, todo el tiempo posible, nunca imaginé que el amor me haga así de feliz.
 
 Bueno, no te enojes por esta parte, yo te conozco... No sé si sentís lo mismo, soy muy dramático y lo sabés, pero no me importa, con tal de que me ames un poquito yo ya soy recontra feliz y lo sabés. Me hacés muy feliz y aunque a veces soy un poquito pelotudo con las cosas que te digo y con la palabra "Terminar", creo que es obvio que no quiero eso ni cerca. Lloré 3 veces por algo que PODRÍA pasar. Quiero estar el mayor tiempo con vos, hablando, amando, lo que sea.
@@ -501,10 +517,11 @@ Bueno, no te enojes por esta parte, yo te conozco... No sé si sentís lo mismo,
 Te amo.</p>
 
     <span class="sign">Con todo mi amor ♡</span>
+
   </div>
 </section>
 
-<!-- CUARTA PARTE: FOTOS -->
+<!-- CUARTA PARTE: 6 FOTOS -->
 
 <section class="section" id="fotos">
 
@@ -517,33 +534,61 @@ Te amo.</p>
   <div class="photo-grid">
 
     <div class="photo">
-      <img src="fotos/foto1.jpg" alt="Nuestro recuerdo 1" onerror="this.remove()">
+      <img src="fotos/foto1.jpeg" alt="Nuestro recuerdo 1"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
       <div class="photo-placeholder">
-        <div><b>♡</b>Agregá tu foto 1<br><small>fotos/foto1.jpg</small></div>
+        <div><b>♡</b>Nuestro recuerdo 1</div>
       </div>
       <div class="photo-caption">Un recuerdo nuestro</div>
     </div>
 
     <div class="photo">
-      <img src="fotos/foto2.jpg" alt="Nuestro recuerdo 2" onerror="this.remove()">
+      <img src="fotos/foto2.jpeg" alt="Nuestro recuerdo 2"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
       <div class="photo-placeholder">
-        <div><b>♡</b>Agregá tu foto 2<br><small>fotos/foto2.jpg</small></div>
+        <div><b>♡</b>Nuestro recuerdo 2</div>
       </div>
       <div class="photo-caption">De mis momentos favoritos</div>
     </div>
 
     <div class="photo">
-      <img src="fotos/foto3.jpg" alt="Nuestro recuerdo 3" onerror="this.remove()">
+      <img src="fotos/foto3.jpeg" alt="Nuestro recuerdo 3"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
       <div class="photo-placeholder">
-        <div><b>♡</b>Agregá tu foto 3<br><small>fotos/foto3.jpg</small></div>
+        <div><b>♡</b>Nuestro recuerdo 3</div>
       </div>
       <div class="photo-caption">Vos y yo</div>
     </div>
 
     <div class="photo">
-      <img src="fotos/foto4.jpg" alt="Nuestro recuerdo 4" onerror="this.remove()">
+      <img src="fotos/foto4.jpeg" alt="Nuestro recuerdo 4"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
       <div class="photo-placeholder">
-        <div><b>♡</b>Agregá tu foto 4<br><small>fotos/foto4.jpg</small></div>
+        <div><b>♡</b>Nuestro recuerdo 4</div>
+      </div>
+      <div class="photo-caption">Un momento especial</div>
+    </div>
+
+    <div class="photo">
+      <img src="fotos/foto5.jpeg" alt="Nuestro recuerdo 5"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
+      <div class="photo-placeholder">
+        <div><b>♡</b>Nuestro recuerdo 5</div>
+      </div>
+      <div class="photo-caption">Otro recuerdo que guardo</div>
+    </div>
+
+    <div class="photo">
+      <img src="fotos/foto6.jpeg" alt="Nuestro recuerdo 6"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.remove()">
+      <div class="photo-placeholder">
+        <div><b>♡</b>Nuestro recuerdo 6</div>
       </div>
       <div class="photo-caption">Y muchos más por venir</div>
     </div>
@@ -562,11 +607,13 @@ Te amo.</p>
   </div>
 
   <div class="letter">
+
     <p>Bueno, yo no soy muy bueno para estas cosas, pero si necesitás a alguien para desahogarte siempre voy a estar para vos, si me necesitás para cualquier cosa, te lo juro por lo que sea, por cualquier cosa, yo voy a estar ahí, no te voy a juzgar, no te voy a dar mi opinión si no la querés, y aunque no sea muy bueno consolando, tengo dos oídos y un amor exagerado para vos. Puedo escuchar.
 
 No te estoy presionando, no quiero que me cuentes nada que no quieras, nadie querría contarme sus problemas, yo sé. No soy bueno consolando, pero si me necesitás voy a estar ahí, te prometo que te voy a apoyar, te voy a querer, te voy a escuchar. Si me necesitás, hacelo.</p>
 
     <span class="sign">No tenés que poder con todo sola. ♡</span>
+
   </div>
 </section>
 
@@ -581,6 +628,7 @@ No te estoy presionando, no quiero que me cuentes nada que no quieras, nadie que
   </div>
 
   <div class="letter">
+
     <p>Bueno, acá quiero desahogarme un poco. Te conté nada y casi nada de mi familia, de mi vida. Mi familia no es la mejor, ni cerca, pero es mi familia y la tengo que amar porque es lo que me tocó amar, y estoy totalmente agradecido de todo.
 
 Aunque me digan que soy un fracasado el 90% del tiempo, aunque me digan que no sirvo para nada, aunque me digan lo que me digan, lo tengo que aguantar y amar, porque es así.
@@ -594,6 +642,7 @@ No soy el mejor, como dije, en nada, y me falta una eternidad para ser el mejor 
 Por eso no quiero que te sientas mal, nunca quiero que te sientas mal, y aunque no me quieras contar nada de nada, quiero abrazarte igual. Te amo y te voy a amar toda una vida con el alma.</p>
 
     <span class="sign">Gracias por conocerme un poquito más. ♡</span>
+
   </div>
 </section>
 
@@ -607,7 +656,7 @@ Por eso no quiero que te sientas mal, nunca quiero que te sientas mal, y aunque 
 
   <p>Y ojalá sea apenas el primero de muchísimos.</p>
 
-  <p style="opacity:.45; margin-top:28px">
+  <p style="opacity:.45;margin-top:28px">
     Hecho con todo mi amor, para vos.
   </p>
 
@@ -615,7 +664,7 @@ Por eso no quiero que te sientas mal, nunca quiero que te sientas mal, y aunque 
 
 </main>
 
-<!-- JAVASCRIPT: DESBLOQUEO -->
+<!-- DESBLOQUEO -->
 
 <script>
 
@@ -642,4 +691,3 @@ unlockButton.addEventListener("click", () => {
 
 </body>
 </html>
-
